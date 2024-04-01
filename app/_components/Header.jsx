@@ -10,7 +10,13 @@ const Header = () => {
   const { user, isSignedIn } = useUser();
   return (
     <header className="h-24 flex justify-between items-center p-6 md:px-20 shadow-sm  ">
-      <Image src="/foodie-logo.png" width={150} height={150} />
+      <Image
+        src="/foodie-logo.png"
+        width={150}
+        height={150}
+        priority
+        alt="My store logo"
+      />
 
       <div className="hidden md:flex border p-2 rounded-lg bg-gray-200 w-96">
         <input
