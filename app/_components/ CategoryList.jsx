@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import GetCategory from "../_util/GlobalApi";
+import { GetCategory } from "../_util/GlobalApi";
 import Image from "next/image";
-import { ArrowRightCircle } from "lucide-react";
+import { ArrowLeftCircle, ArrowRightCircle } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
@@ -32,8 +32,10 @@ const CategoryList = () => {
       });
     }
   };
+
   return (
     <section className="mt-10 relative">
+      <ArrowLeftCircle className="absolute -left-10 top-9 bg-gray-500 rounded-full text-white h-8 w-8 cursor-pointer" />
       <div className="flex gap-4 overflow-auto scrollbar-hide" ref={listRef}>
         {categoryList.map((category, index) => (
           <Link

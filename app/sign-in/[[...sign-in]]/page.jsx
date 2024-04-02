@@ -32,7 +32,7 @@ export default function Page() {
             </h2>
 
             <p className="mt-4 leading-relaxed text-white/90">
-              Your place to order Brazilian food in Ireland.
+              Your place to order food in Ireland.
             </p>
           </div>
         </section>
